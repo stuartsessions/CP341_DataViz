@@ -1,0 +1,16 @@
+
+A description of your problem domain. Include any information you think your peers will need to understand the context of your data and tasks.
+	
+	I have been working with the "All Time Premier League Player Statistics" datatset (https://www.kaggle.com/datasets/rishikeshkanabar/premier-league-player-statistics-updated-daily). This dataset is from 2020, and looks at a variety of statistics for the Premier League players at that time. In football, there are lots of coorelations between statistics. For example, a player on a better team is likely to have a higher number of goals/game. However for this project I decided to look at a couple of statistics that are more obscure to those who have not spent much time watching football.
+
+Introduce your dataset! What information is available to you? Are there any limitations or issues?
+
+	I have been working with the "All Time Premier League Player Statistics" datatset (https://www.kaggle.com/datasets/rishikeshkanabar/premier-league-player-statistics-updated-daily). This dataset is from 2020, and looks at a variety of statistics for the Premier League players at that time. In football, there are lots of coorelations between statistics. For example, a player on a better team is likely to have a higher number of goals/game. While there are lots of different comparisons between statistics that could be run on this dataset, the first issue I ran into was finding two stats to compare that was actually compelling. Football, being the most popular sport in the world, has been thoroughly analyzed. As a major consumer of all things Premier League personally, many of the potential visualizations have known results and therefore are uninteresting.
+
+Aside from the commonness of the dataset, the data is very easy to work with. It is well organized, of decent size, and contains many different features.
+
+Describe your tasks/questions relating to the data, and prime the reader to start looking at your viz
+
+Embed your visualizations, making sure there is sufficient labeling and description for the reader to understand them
+
+Conclude with any interesting trends you found, things that were interesting, or even mention any non-results you had!
