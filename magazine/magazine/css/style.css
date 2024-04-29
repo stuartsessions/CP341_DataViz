@@ -209,6 +209,8 @@ ul.topNav  {
 	padding-top:5px;
 }
 .contant_1_left {
+    background-color:powderblue;
+    border-radius:10px;
     width:710px;
 	float:left;
 }
