@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title> My Page</title>
+    <style>
+      .container{
+          width: 200px;
+          height: 200px;
+          background-color: #0a0a23;
+      }
+
+     {
+        display:block;
+        margin-block-start:1em;
+        margin-block-end: 1em;
+        font-weight:bold;
+      }
+    </style>
+  </head>
+  <body style="background-color:powderblue;">
+    <script>
+      function stopIt(){
+        alert("pls stop");
+      }
+
+    </script>
+    <h1 style="font-size:5em;font-family:courier;text-align:center;"> Stuart's Webpage </h1>
+    <p style="color:red;text-align:center;"> REDRUM </p>
+    <div style="margin: auto;width: 50%;border: 3px solid green;padding: 10px;">
+      <p>Making a bunch of text for the first paragraph</p>
+      <p style="text-align:center;">Four score and seven years ago...</p>
+      <img onclick="console.log('clicked!!')" id="graph" src="Jerseys.png" style="text-align:center;width:500px;height:500px;">
+      <h1 style = "font-size:5em;font-family:Brush Script MT,cursive;text-align:center;">Special thanks to:</h1>
+      <img onclick="console.log('clicked!!')" id="face" src="Ben_Nye.jpg" style="text-align:center;width:500px;height:500px;">
+      <br/>
+      <br/>
+      <a href="https://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm" style="text-align:center;">Gettysburg Address</a>
+    </div>
+    <script>
+      i = document.getElementById("face");
+      i.style.width = "700px";
+    </script>
+  </body>
+</html>
