@@ -1,0 +1,17 @@
+<body>
+    <h1>My plot!</h1>
+    <svg width="500px" height="500px">
+        <circle cx="100" cy="300" r="30" />
+    </svg>
+    <script>
+        function makeCircle(){
+        let svg = document.querySelectorAll('svg')[0];
+        let circle = document.createElement('circle');
+        circle.setAttribute('cx',100);
+        circle.setAttribute('cy',200);
+        circle.setAttribute('r',20);
+        svg.appendChild(circle);
+        return svg;
+        }
+    </script>
+</body>
