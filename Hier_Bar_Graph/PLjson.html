@@ -41,7 +41,7 @@ var duration = 750,
     delay = 25;
 
 var partition = d3.layout.partition()
-    .value(function(d) { return d.size; });
+    .value(function(d) { return d.Wins; });
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -67,7 +67,7 @@ svg.append("g")
   .append("line")
     .attr("y1", "100%");
 
-d3.json("https://gist.githubusercontent.com/mbostock/1283663/raw/0799640d0e214be848aca121cce57f4c07ac74ee/readme.json", function(error, root) {
+d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/PLstats.json", function(error, root) {
   if (error) throw error;
 
   partition.nodes(root);
@@ -222,7 +222,7 @@ function bar(d) {
       .attr("y", barHeight / 2)
       .attr("dy", ".35em")
       .style("text-anchor", "end")
-      .text(function(d) { return d.name; });
+      .text(function(d) { return d.Name; });
 
   bar.append("rect")
       .attr("width", function(d) { return x(d.value); })
