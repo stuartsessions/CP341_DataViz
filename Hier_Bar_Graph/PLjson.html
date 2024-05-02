@@ -67,7 +67,7 @@ svg.append("g")
   .append("line")
     .attr("y1", "100%");
 
-d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/test.json", function(error, root) {
+d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/PLstats.json", function(error, root) {
   if (error) throw error;
 
   partition.nodes(root);
@@ -76,8 +76,8 @@ d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/tes
 });
 
 function down(d, i) {
-  if (!d.children || this.__transition__) return;
-  var end = duration + d.children.length * delay;
+  if (!d.Children || this.__transition__) return;
+  var end = duration + d.Children.length * delay;
 
   // Mark any currently-displayed bars as exiting.
   var exit = svg.selectAll(".enter")
@@ -99,7 +99,7 @@ function down(d, i) {
   enter.select("rect").style("fill", color(true));
 
   // Update the x-scale domain.
-  x.domain([0, d3.max(d.children, function(d) { return d.value; })]).nice();
+  x.domain([0, d3.max(d.Children, function(d) { return d.value; })]).nice();
 
   // Update the x-axis.
   svg.selectAll(".x.axis").transition()
@@ -119,7 +119,7 @@ function down(d, i) {
   // Transition entering rects to the new x-scale.
   enterTransition.select("rect")
       .attr("width", function(d) { return x(d.value); })
-      .style("fill", function(d) { return color(!!d.children); });
+      .style("fill", function(d) { return color(!!d.Children); });
 
   // Transition exiting bars to fade out.
   var exitTransition = exit.transition()
@@ -142,7 +142,7 @@ function down(d, i) {
 
 function up(d) {
   if (!d.parent || this.__transition__) return;
-  var end = duration + d.children.length * delay;
+  var end = duration + d.Children.length * delay;
 
   // Mark any currently-displayed bars as exiting.
   var exit = svg.selectAll(".enter")
@@ -156,12 +156,12 @@ function up(d) {
   // Color the bars as appropriate.
   // Exiting nodes will obscure the parent bar, so hide it.
   enter.select("rect")
-      .style("fill", function(d) { return color(!!d.children); })
+      .style("fill", function(d) { return color(!!d.Children); })
     .filter(function(p) { return p === d; })
       .style("fill-opacity", 1e-6);
 
   // Update the x-scale domain.
-  x.domain([0, d3.max(d.parent.children, function(d) { return d.value; })]).nice();
+  x.domain([0, d3.max(d.parent.Children, function(d) { return d.value; })]).nice();
 
   // Update the x-axis.
   svg.selectAll(".x.axis").transition()
@@ -212,9 +212,9 @@ function bar(d) {
       .attr("class", "enter")
       .attr("transform", "translate(0,5)")
     .selectAll("g")
-      .data(d.children)
+      .data(d.Children)
     .enter().append("g")
-      .style("cursor", function(d) { return !d.children ? null : "pointer"; })
+      .style("cursor", function(d) { return !d.Children ? null : "pointer"; })
       .on("click", down);
 
   bar.append("text")
