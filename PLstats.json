@@ -2,7 +2,7 @@
     "Name": "Clubs",
     "children": [
         {
-            "Club": "Arsenal",
+            "Name": "Arsenal",
             "children": [
                 {
                     "Name": "Bernd Leno",
@@ -1837,7 +1837,7 @@
             ]
         },
         {
-            "Club": "Aston-Villa",
+            "Name": "Aston-Villa",
             "children": [
                 {
                     "Name": "Tom Heaton",
@@ -3550,7 +3550,7 @@
             ]
         },
         {
-            "Club": "Brighton-and-Hove-Albion",
+            "Name": "Brighton-and-Hove-Albion",
             "children": [
                 {
                     "Name": "Mat Ryan",
@@ -5568,7 +5568,7 @@
             ]
         },
         {
-            "Club": "Burnley",
+            "Name": "Burnley",
             "children": [
                 {
                     "Name": "Nick Pope",
@@ -7037,7 +7037,7 @@
             ]
         },
         {
-            "Club": "Chelsea",
+            "Name": "Chelsea",
             "children": [
                 {
                     "Name": "Kepa Arrizabalaga",
@@ -8689,7 +8689,7 @@
             ]
         },
         {
-            "Club": "Crystal-Palace",
+            "Name": "Crystal-Palace",
             "children": [
                 {
                     "Name": "Wayne Hennessey",
@@ -10585,7 +10585,7 @@
             ]
         },
         {
-            "Club": "Everton",
+            "Name": "Everton",
             "children": [
                 {
                     "Name": "Jordan Pickford",
@@ -12481,7 +12481,7 @@
             ]
         },
         {
-            "Club": "Fulham",
+            "Name": "Fulham",
             "children": [
                 {
                     "Name": "Marek Rod\u00e1k",
@@ -14011,7 +14011,7 @@
             ]
         },
         {
-            "Club": "Leeds-United",
+            "Name": "Leeds-United",
             "children": [
                 {
                     "Name": "Kiko Casilla",
@@ -15602,7 +15602,7 @@
             ]
         },
         {
-            "Club": "Leicester-City",
+            "Name": "Leicester-City",
             "children": [
                 {
                     "Name": "Kasper Schmeichel",
@@ -17498,7 +17498,7 @@
             ]
         },
         {
-            "Club": "Liverpool",
+            "Name": "Liverpool",
             "children": [
                 {
                     "Name": "Loris Karius",
@@ -19577,7 +19577,7 @@
             ]
         },
         {
-            "Club": "Manchester-City",
+            "Name": "Manchester-City",
             "children": [
                 {
                     "Name": "Ederson",
@@ -21229,7 +21229,7 @@
             ]
         },
         {
-            "Club": "Manchester-United",
+            "Name": "Manchester-United",
             "children": [
                 {
                     "Name": "David de Gea",
@@ -23125,7 +23125,7 @@
             ]
         },
         {
-            "Club": "Newcastle-United",
+            "Name": "Newcastle-United",
             "children": [
                 {
                     "Name": "Mark Gillespie",
@@ -24960,7 +24960,7 @@
             ]
         },
         {
-            "Club": "Sheffield-United",
+            "Name": "Sheffield-United",
             "children": [
                 {
                     "Name": "Wes Foderingham",
@@ -26673,7 +26673,7 @@
             ]
         },
         {
-            "Club": "Southampton",
+            "Name": "Southampton",
             "children": [
                 {
                     "Name": "Alex McCarthy",
@@ -28142,7 +28142,7 @@
             ]
         },
         {
-            "Club": "Tottenham-Hotspur",
+            "Name": "Tottenham-Hotspur",
             "children": [
                 {
                     "Name": "Hugo Lloris",
@@ -30099,7 +30099,7 @@
             ]
         },
         {
-            "Club": "West-Bromwich-Albion",
+            "Name": "West-Bromwich-Albion",
             "children": [
                 {
                     "Name": "Sam Johnstone",
@@ -31812,7 +31812,7 @@
             ]
         },
         {
-            "Club": "West-Ham-United",
+            "Name": "West-Ham-United",
             "children": [
                 {
                     "Name": "Lukasz Fabianski",
@@ -33586,7 +33586,7 @@
             ]
         },
         {
-            "Club": "Wolverhampton-Wanderers",
+            "Name": "Wolverhampton-Wanderers",
             "children": [
                 {
                     "Name": "Rui Patr\u00edcio",
