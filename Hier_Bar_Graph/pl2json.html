@@ -67,7 +67,7 @@ svg.append("g")
   .append("line")
     .attr("y1", "100%");
 
-d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/PLstats.json", function(error, root) {
+d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/test.json", function(error, root) {
   if (error) throw error;
 
   partition.nodes(root);
