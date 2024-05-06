@@ -32,7 +32,7 @@ var margin = {top: 30, right: 120, bottom: 0, left: 120},
 var x = d3.scale.linear()
     .range([0, width]);
 
-var barHeight = 20;
+var barHeight = 19;
 
 var color = d3.scale.ordinal()
     .range(["steelblue", "#ccc"]);
@@ -66,6 +66,19 @@ svg.append("g")
     .attr("class", "y axis")
   .append("line")
     .attr("y1", "100%");
+
+svg.append('text')
+    .attr('text-anchor', 'end')
+    .attr('x', width / 2)
+    .attr('y', 0)
+    .text('Wins');
+
+svg.append('text')
+    .attr('text-anchor', 'end')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', -margin.left + 20)
+    .attr('x', -margin.top - margin.bottom)
+    .text('Team');
 
 d3.json("https://raw.githubusercontent.com/stuartsessions/CP341_DataViz/main/PLstats.json", function(error, root) {
   if (error) throw error;
