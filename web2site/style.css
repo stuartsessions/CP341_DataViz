@@ -1,0 +1,19 @@
+body {
+    background-color:black;
+    margin:0px;
+    padding:0px;
+
+}
+h1 {
+    color:white;
+}
+.topNav li {
+    float:left;
+    display:inline-block;
+}
+
+.topNav li a{
+    float:left;
+    padding-left:12px;
+
+}
