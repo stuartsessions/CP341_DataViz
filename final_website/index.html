@@ -19,23 +19,26 @@
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+        d3v3 = d3
+        window.d3 = null
+
+    </script>
     <script src="https://d3js.org/d3.v6.js"></script>
-    <link rel="stylesheet" href="css/vizhub_style.css" />
+    <script>
+        d3v6 = d3
+        window.d3 = null
+        // test it worked
+        console.log('v3', d3v3.version)
+        console.log('v6', d3v6.version)
+    </script>
+
+
+    <link rel="stylesheet" href="css/vizhub_styles.css" />
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-            <li class="sidebar-nav-item"><a href="#about">About</a></li>
-            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <!-- Header-->
     <header class="masthead d-flex align-items-center">
@@ -122,54 +125,52 @@
 
             <div class="grid text-center">
                 <div class="row w-100">
-                    <div class="col-3" style="background-color: #eee;border-radius:25px">
+                    <div class="col-3" style="background-color: #eee;color:black;border-radius:25px">
                         <h3>
-                            Tasks:
+                            Task:
                         </h3>
+                        <p>Examine concentration of public restrooms around Australia</p>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-8" style="background-color: #eee;border-radius:25px">
-                        <div id="myMap"></div>
+                        <div id="container" style="position: relative">
+                            <div id="controls" style="position: absolute">
+                                <button id="toggleToilets" type="button">
+                                    Toggle Toilets
+                                </button>
+                            </div>
+                            <div id="myMap"></div>
+                        </div>
                     </div>
                 </div>
-
+                <p>Do not press the "Toggle Toilets" button. It will crash the website! Instead, click <a
+                        style="color:black"
+                        href="https://vizhub.com/stuartsessions/8848503859634c7aa08dd8301b0609c6?edit=files">here</a>
+                </p>
             </div>
-            <h2 class="mx-auto mb-5">
-                Welcome to
-                <em>your</em>
-                next website!
-            </h2>
-            <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download
-                Now!</a>
+
         </div>
     </section>
     <!-- Callout-->
     <section class="callout" id="callout">
         <div class="container px-4 px-lg-5 text-center">
-            <h1 style="text-align: left;">Australian Toilet Map</h1>
+            <h1 style="text-align: left;">Premier League Wins</h1>
 
             <div class="grid text-center">
-                <div class="row w-100">
-                    <div class="col-3" style="background-color: #eee;border-radius:25px">
-                        <h3>
-                            Tasks:
-                        </h3>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-8" style="background-color: #eee;border-radius:25px">
-                        
-                    </div>
-                </div>
+                <div class="row">
+                    <div class="col" style="background-color: #eee;border-radius:25px">
+                        <h3>Task:</h3>
+                        <p>Observe the most successful teams, and which players made the biggest contributions.</p>
 
+                    </div>
+                    <div class="row w-100">
+                        <div class="col-9" style="background-color: #eee;border-radius:25px">
+                            <div id="body"></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <h2 class="mx-auto mb-5">
-                Welcome to
-                <em>your</em>
-                next website!
-            </h2>
-            <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download
-                Now!</a>
-        </div>
     </section>
 
     <!-- Footer-->
@@ -194,7 +195,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Australian Map JS-->
     <script src="js/bundle.js"></script>
+    <!-- Hier Bar Chart JS-->
+    <script src="js/barchart.js"></script>
 </body>
 
 </html>
